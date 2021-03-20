@@ -1,0 +1,8 @@
+button {
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: lightblue;
+    font: 1em caption;
+    padding: 5px;
+    margin: 10px;
+}

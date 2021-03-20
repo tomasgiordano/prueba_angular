@@ -1,24 +1,25 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { BienvenidoComponent } from '../bienvenido/bienvenido.component';
-import { LoginComponent } from '../login/login.component';
-import { ErrorComponent } from '../error/error.component';
-
+import { LoginComponent } from './components/login/login.component';
+import { BienvenidoComponent } from './components/bienvenido/bienvenido.component';
+import { ErrorComponent } from './components/error/error.component';
+import { CalculadoraEdadesComponent } from './components/calculadora-edades/calculadora-edades.component';
 @NgModule({
   declarations: [
     AppComponent,
-    BienvenidoComponent,
     LoginComponent,
-    ErrorComponent
+    BienvenidoComponent,
+    ErrorComponent,
+    CalculadoraEdadesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
